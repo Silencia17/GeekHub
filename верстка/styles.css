@@ -1,0 +1,459 @@
+body {
+    margin: 0px;
+}
+.top{
+    background-image: url(img/HeadBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 920px;
+    position: relative;
+}
+.header{
+    display: flex;
+}
+#logotype{
+    margin-left: 300px; 
+    margin-top: 49px;
+    float: left;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-items: flex-end;
+    margin-left: auto;
+    margin-right: 300px;
+}
+.Head-txt{
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    float: right;
+    margin-right: 30px;
+    margin-top: 69px;
+    text-align: center;
+}
+.title{
+    display: flex;
+    text-align: center;
+    margin-top: 235px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title-txt{
+    font-size: 48px;
+    line-height: 36px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Proxima Nova";
+}
+.top-txt{
+    width: 752px;
+    height: 26px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #949494;
+    font-family: "Proxima Nova";
+    text-align: center;
+}
+#titleBut{
+    width: 205px;
+    height: 50px;
+    border-radius: 25px;
+    background-image: linear-gradient(74deg, #48007c 0%, #e70087 100%);
+    color: white;
+    margin-top:63px;
+    font-size: 18px;
+    line-height: 36px;
+}
+.scroll{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+}
+.scroll-img{
+    width: 25px;
+    height: 43px;
+    border-radius: 12px;
+}
+#scroll-txt{
+    font-size: 18px;
+    color: white;
+    line-height: 36px;
+}
+
+.bestDesign{
+    float: left;
+    background-image: url(img/BestDesign.png);
+    min-height: 522px;
+    background-repeat: no-repeat;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.bestCode{
+    float: right;
+    background-image: url(img/BestCode.png);
+    min-height: 522px;
+    background-repeat: no-repeat;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.Best-H{
+    font-size: 48px;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: 300;
+    width: fit-content;
+    margin-top: auto;
+    margin-left: 185px;
+}
+.Best-txt{
+    width: 585px;
+    height: 107px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Proxima Nova";
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.BestButton{
+    width: 205px;
+    height: 50px;
+    border-radius: 25px;
+    background-image: linear-gradient(74deg, #48007c 0%, #e70087 100%);
+    margin: auto;
+    margin-top: 0;
+    margin-left: 185px;
+    color:white;
+}
+.weDo{
+    min-height: 800px;
+    background-color: white;
+}
+#What{
+    font-size: 48px;
+    line-height: 36px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Proxima Nova";
+    text-align: center;
+    margin-top: 590px;
+    
+}
+.WebDesign{
+    width: 50%;
+    float: left;
+    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.Digital{
+    width: 50%;
+    float: right;
+    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.WebApplications{
+    width: 50%;
+    float: left;
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    justify-content:center;
+}
+.DesktopApplications{
+    width: 50%;
+    float: right;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images{
+    margin-block-end: 30px;
+    margin-right: 42px;
+}
+.heading{
+    margin-block-end: 100px;
+    margin-left: auto;
+    margin-right: 273px;
+    position: absolute;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Proxima Nova";
+}
+#headingDesk{
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-bottom: 150px;
+}
+#headingDigital{
+    margin-left: auto; 
+    margin-right: 244px; 
+    margin-bottom: 150px;
+}
+#headingWeb{
+    margin-left: auto; 
+    margin-right:auto;
+}
+.do-txt{
+    margin-block-end: 20px;
+    width: 427px;
+    height: 81px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #949494;
+    font-weight: 300;
+    font-family: "Proxima Nova";
+}
+
+.About{
+    background-image: url(img/AboutUs.png);
+    min-height: 890px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.About-H{
+    font-size: 48px;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Proxima Nova";
+    text-align: center;
+    margin-top: 100px;
+}
+.About-txt{
+    width: 702px;
+    height: 136px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #949494;
+    font-weight: 300;
+    font-family: "Proxima Nova";
+    text-align: center;
+}
+.peoples{
+    display: flex;
+
+}
+.peoplePh{
+    padding: 60px;
+}
+.John{
+    margin-top: 0px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+}
+.people-txt{
+    width: 246px;
+    height: 74px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #949494;
+    font-weight: 300;
+    font-family: "Proxima Nova";
+    text-align: center;
+}
+#lastButt{
+    width: 205px;
+    height: 50px;
+    border-radius: 25px;
+    background-image: linear-gradient(74deg, #48007c 0%, #e70087 100%);
+    font-size: 18px;
+    line-height: 36px;
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    text-align: center;
+    margin-top: 20px;
+}
+.location{
+    display: flex;
+    background-image: url(img/location.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 501px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+}
+.pin{
+    height: 64px;
+    margin-left: 36px;
+}
+.last{
+    min-height: 450px;
+    background-color: #ffffff;
+}
+#last-txt{
+    font-size: 18px;
+    line-height: 36px;
+    color: #a7acbc;
+    font-weight: 300;
+    font-family: "Proxima Nova";
+    text-align: center;
+}
+
+/*media*/
+@media screen and (max-width: 1200px){
+    .top .Best .weDo .pages .About .location .last {
+        width: 1140px;
+    }
+    #logotype{
+        margin-left: 0px;
+    }
+    .navigation{
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width: 1199px){
+    .top.Best.weDo.pages.About.location.last {
+        width: 960px;
+    }
+    #logotype{
+        margin-left: 10px;
+    }
+    .navigation{
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width: 991px){
+    .top.Best.weDo.pages.About.location.last {
+        width: 248px;
+    }
+    #logotype{
+        display: none;
+    }
+    .navigation{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .Best-H{
+        margin-left: 0px;
+    }
+    .Best-txt{
+        width: 100%;
+    }
+    .BestButton{
+        margin-top: auto;
+        margin-left: auto;
+    }
+    .peoples{
+        flex-direction: column;
+    }
+    .WebDesign.DesktopApplications.WebApplications.Digital {
+        flex-wrap: wrap;
+    }
+    .heading{
+        margin-right: 120px;
+    }
+    #headingDigital{
+        margin-right: 120px;
+    } 
+    #headingWeb {
+        margin-right: 120px;
+    }
+    #headingDesk{
+        margin-right: 120px;
+    }
+}
+@media screen and (max-width: 767px){
+    .top.Best.weDo.pages.About.location.last {
+        width: 540px;
+    }
+    #logotype{
+        display: none;
+    }
+    .navigation{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .Best-H{
+        margin-left: 0px;
+    }
+    .Best-txt{
+        width: 100%;
+    }
+    .BestButton{
+        margin-top: auto;
+        margin-left: auto;
+    }
+    .WebDesign.DesktopApplications.WebApplications.Digital {
+        flex-wrap: wrap;
+    }
+    .heading{
+        margin-right: 20px;
+    }
+    #headingDigital {
+        margin-right: 20px;
+    }
+    #headingWeb{
+        margin-right: 20px;
+    } 
+    #headingDesk{
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 575px){
+    .top.Best.weDo.pages.About.location.last {
+        width: 100%;
+        padding: 0 15px;
+    }
+    #logotype{
+        display: none;
+    }
+    .navigation{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .Best-H{
+        margin-left: 0px;
+    }
+    .Best-txt{
+        width: 100%;
+    }
+    .BestButton{
+        margin-top: auto;
+        margin-left: auto;
+    }
+    .WebDesign.DesktopApplications.WebApplications.Digital {
+        flex-wrap: wrap;
+    }
+    .heading{
+        margin-right: 0px;
+    }
+    #headingDigital {
+        margin-right: 0px;
+    }
+    #headingWeb{
+        margin-right: 0px;
+    }
+    #headingDesk{
+        margin-right: 0px;
+    }
+}
