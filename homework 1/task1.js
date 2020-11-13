@@ -9,6 +9,9 @@ var arr = [3,-5,1,44,-12,3,1,2,-3,-3,2,1,4,-2-3-1];
 function maxValue(arr){
     currentValue = arr[0];
     for(var i = 0; i < arr.length; i++){
+        if (isNaN(arr[i])){
+                continue
+            }
         if(arr[i] > currentValue){
             currentValue = arr[i];
         }
@@ -22,6 +25,9 @@ console.log('max:' + ' ' + maxValue(arr))
 function minValue(arr){
     currentValue = arr[0];
     for(var i = 0; i < arr.length; i++){
+        if (isNaN(arr[i])){
+                continue
+            }
         if(arr[i] < currentValue){
             currentValue = arr[i];
         }
@@ -36,6 +42,9 @@ console.log('min:' + ' ' + minValue(arr))
 function sum(arr){
     var sumResult = 0;
         for (var i = 0; i<arr.length; i++){
+            if (isNaN(arr[i])){
+                continue
+            }
             sumResult +=arr[i];
         }
     return sumResult
