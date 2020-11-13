@@ -10,10 +10,13 @@ function maxValue(arr){
     currentValue = arr[0];
     for(var i = 0; i < arr.length; i++){
         if (isNaN(arr[i])){
-                continue
-            }
+            continue
+        }
         if(arr[i] > currentValue){
             currentValue = arr[i];
+        }
+        if (isNaN(arr[i])){
+            continue
         }
     }
     return currentValue;
@@ -26,10 +29,13 @@ function minValue(arr){
     currentValue = arr[0];
     for(var i = 0; i < arr.length; i++){
         if (isNaN(arr[i])){
-                continue
-            }
+            continue
+        }
         if(arr[i] < currentValue){
             currentValue = arr[i];
+        }
+        if (isNaN(arr[i])){
+            continue
         }
     }
     return currentValue;
@@ -39,6 +45,7 @@ console.log('min:' + ' ' + minValue(arr))
 
 //Sum
 
+
 function sum(arr){
     var sumResult = 0;
         for (var i = 0; i<arr.length; i++){
@@ -47,6 +54,9 @@ function sum(arr){
             }
             sumResult +=arr[i];
         }
+    if (isNaN(arr[i])){
+        continue
+    }
     return sumResult
 }
 console.log('Sum:' + ' ' + sum(arr))
