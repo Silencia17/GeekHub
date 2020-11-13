@@ -33,7 +33,6 @@ console.log('min:' + ' ' + minValue(arr))
 
 //Sum
 
-
 function sum(arr){
     var sumResult = 0;
         for (var i = 0; i<arr.length; i++){
