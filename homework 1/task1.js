@@ -1,4 +1,4 @@
-var arr = [3,-5,1,44,-12,3,1,2,-3,-3,2,1,4,-2-3-1];
+16:28:52.164 //var arr = [3,-5,1,44,-12,3,1,2,-3,-3,2,1,4,-2-3-1];
 //var arr = [-1,-8,2];
 //var arr = [1,7,3];
 //var arr = [1,undefined,3,5,-3];
@@ -9,7 +9,7 @@ var arr = [3,-5,1,44,-12,3,1,2,-3,-3,2,1,4,-2-3-1];
 function maxValue(arr){
     var currentValue = -Infinity;
     for(var i = 0; i < arr.length; i++){
-        if (typeof currentValue !== 'boolean' && !isNaN(arr[i])){
+        if (typeof currentValue === 'boolean' && !isNaN(arr[i])){
             currentValue = arr[i]
         }
         else if(arr[i] > currentValue){
@@ -18,14 +18,14 @@ function maxValue(arr){
     }
     return currentValue;
 }
-console.log('max: ' + maxValue([]))
+console.log('max: ' + maxValue([2,3,1,NaN,3,true]))
 
 //min
 
 function minValue(arr){
     currentValue = Infinity;
     for(var i = 0; i < arr.length; i++){
-        if (typeof currentValue !== 'boolean' && !isNaN(arr[i])){
+        if (typeof currentValue === 'boolean' && !isNaN(arr[i])){
             currentValue = arr[i]
         }
         else if(arr[i] < currentValue){
@@ -35,7 +35,7 @@ function minValue(arr){
     return currentValue;
 }
 
-console.log('min: ' + minValue(arr))
+console.log('min: ' + minValue([2,3,1,NaN,3,true]))
 
 //Sum
 
@@ -43,10 +43,10 @@ console.log('min: ' + minValue(arr))
 function sum(arr){
     var sumResult = 0;
     for (var i = 0; i<arr.length; i++){
-        if (typeof sumResult !== 'number' && !isNaN(arr[i])){
-            sumResult +=arr[i];
+        if (typeof arr[i] === 'number' && !isNaN(arr[i])){
+            sumResult += arr[i];
         }
     }
     return sumResult
 }
-console.log('Sum: ' + sum())
+console.log('Sum: ' + sum([2,3,1,NaN,3,true]))
