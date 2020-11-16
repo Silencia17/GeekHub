@@ -23,7 +23,7 @@ console.log('max: ' + maxValue([]))
 //min
 
 function minValue(arr){
-    currentValue = Infinity;
+    var currentValue = Infinity;
     for(var i = 0; i < arr.length; i++){
         if (typeof currentValue !== 'number' && !isNaN(arr[i])){
             currentValue = arr[i]
