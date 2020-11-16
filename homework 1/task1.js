@@ -9,7 +9,7 @@ var arr = [3,-5,1,44,-12,3,1,2,-3,-3,2,1,4,-2-3-1];
 function maxValue(arr){
     var currentValue = -Infinity;
     for(var i = 0; i < arr.length; i++){
-        if (typeof currentValue !== 'number' && !isNaN(arr[i])){
+        if (typeof currentValue !== 'boolean' && !isNaN(arr[i])){
             currentValue = arr[i]
         }
         else if(arr[i] > currentValue){
@@ -25,7 +25,7 @@ console.log('max: ' + maxValue([]))
 function minValue(arr){
     currentValue = Infinity;
     for(var i = 0; i < arr.length; i++){
-        if (typeof currentValue !== 'number' && !isNaN(arr[i])){
+        if (typeof currentValue !== 'boolean' && !isNaN(arr[i])){
             currentValue = arr[i]
         }
         else if(arr[i] < currentValue){
