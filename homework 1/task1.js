@@ -7,56 +7,46 @@ var arr = [3,-5,1,44,-12,3,1,2,-3,-3,2,1,4,-2-3-1];
 //max
 
 function maxValue(arr){
-    currentValue = arr[0];
+    var currentValue = -Infinity;
     for(var i = 0; i < arr.length; i++){
-        if (isNaN(arr[i])){
-            continue
+        if (typeof currentValue !== 'number' && !isNaN(arr[i])){
+            currentValue = arr[i]
         }
-        if(arr[i] > currentValue){
+        else if(arr[i] > currentValue){
             currentValue = arr[i];
-        }
-        if (isNaN(arr[i])){
-            continue
         }
     }
     return currentValue;
 }
-console.log('max:' + ' ' + maxValue(arr))
+console.log('max: ' + maxValue([]))
 
 //min
 
 function minValue(arr){
-    currentValue = arr[0];
+    currentValue = Infinity;
     for(var i = 0; i < arr.length; i++){
-        if (isNaN(arr[i])){
-            continue
+        if (typeof currentValue !== 'number' && !isNaN(arr[i])){
+            currentValue = arr[i]
         }
-        if(arr[i] < currentValue){
+        else if(arr[i] < currentValue){
             currentValue = arr[i];
-        }
-        if (isNaN(arr[i])){
-            continue
         }
     }
     return currentValue;
 }
 
-console.log('min:' + ' ' + minValue(arr))
+console.log('min: ' + minValue(arr))
 
 //Sum
 
 
 function sum(arr){
     var sumResult = 0;
-        for (var i = 0; i<arr.length; i++){
-            if (isNaN(arr[i])){
-                continue
-            }
+    for (var i = 0; i<arr.length; i++){
+        if (typeof currentValue !== 'number' && !isNaN(arr[i])){
             sumResult +=arr[i];
         }
-    if (isNaN(arr[i])){
-        continue
     }
     return sumResult
 }
-console.log('Sum:' + ' ' + sum(arr))
+console.log('Sum: ' + sum())
