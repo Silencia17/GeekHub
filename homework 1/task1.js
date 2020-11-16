@@ -1,4 +1,4 @@
-16:28:52.164 //var arr = [3,-5,1,44,-12,3,1,2,-3,-3,2,1,4,-2-3-1];
+//var arr = [3,-5,1,44,-12,3,1,2,-3,-3,2,1,4,-2-3-1];
 //var arr = [-1,-8,2];
 //var arr = [1,7,3];
 //var arr = [1,undefined,3,5,-3];
@@ -18,7 +18,7 @@ function maxValue(arr){
     }
     return currentValue;
 }
-console.log('max: ' + maxValue([2,3,1,NaN,3,true]))
+console.log('max: ' + maxValue([]))
 
 //min
 
@@ -35,7 +35,7 @@ function minValue(arr){
     return currentValue;
 }
 
-console.log('min: ' + minValue([2,3,1,NaN,3,true]))
+console.log('min: ' + minValue([]))
 
 //Sum
 
@@ -49,4 +49,4 @@ function sum(arr){
     }
     return sumResult
 }
-console.log('Sum: ' + sum([2,3,1,NaN,3,true]))
+console.log('Sum: ' + sum([]))
