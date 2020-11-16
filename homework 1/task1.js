@@ -43,7 +43,7 @@ console.log('min: ' + minValue(arr))
 function sum(arr){
     var sumResult = 0;
     for (var i = 0; i<arr.length; i++){
-        if (typeof currentValue !== 'number' && !isNaN(arr[i])){
+        if (typeof sumResult !== 'number' && !isNaN(arr[i])){
             sumResult +=arr[i];
         }
     }
