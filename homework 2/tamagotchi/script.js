@@ -97,7 +97,6 @@ function Tamagotchi(hungry,health,happiness,toilet,sleep, purity) {
 
     var pet = new Tamagotchi(100, 100, 100, 100, 100, 100, 'Alice');
 
-    //while(pet.hungry > 0 && pet.health >0 && pet.happiness >0 && pet.toilet >0 && pet.sleep >0 && pet.purity >0){
         setInterval(function propInt(Time = 2) {
         pet.hungry = pet.hungry - parseInt(Time);
         pet.health = pet.health - parseInt(Time);
