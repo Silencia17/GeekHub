@@ -36,14 +36,13 @@ function Tamagotchi(hungry,health,happiness,toilet,sleep, purity) {
     }
     this.goToilet = function (){
         if(this.toilet <= 92){
-            console.log('Я не хочу в туалет!');
+          this.toilet += Math.floor(Math.random() * 8);
+          this.happiness += Math.floor(Math.random() * 2);
+          this.hungry -= Math.floor(Math.random() * 2);
+          this.purity -= Math.floor(Math.random() * 5);
         }
         else{
-            this.toilet += Math.floor(Math.random() * 8);
-            this.happiness += Math.floor(Math.random() * 2);
-            this.hungry -= Math.floor(Math.random() * 2);
-            this.purity -= Math.floor(Math.random() * 5);
-        }
+         console.log('Я не хочу в туалет!');     
     }
     this.sleeping = function (){
         if(this.sleep <= 92){
