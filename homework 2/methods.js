@@ -1,6 +1,6 @@
-let arr = [1, 2, 3, 7, 8, 4, 1]
+const arr = [1, 2, 3, 7, 8, 4, 1]
 
-// ForEach
+// forEach
 
 Array.prototype.myForEach = function (callback) {
   for (let i = 0; i < this.length; i++) {
@@ -11,7 +11,7 @@ arr.myForEach(function (element) {
   console.log(element)
 })
 
-// Sort
+// sort
 Array.prototype.mySort = function () {
   const len = this.length
   for (let i = 0; i < len; i++) {
@@ -26,14 +26,14 @@ Array.prototype.mySort = function () {
   return this
 }
 
-// arr.mySort(function (element){
-//   console.log(element)
-// })
+arr.mySort(function (element){
+  console.log(element)
+})
 
 // map
 
 Array.prototype.myMap = function (callback) {
-  let newArray = []
+  const newArray = []
   for (let i = 0; i < this.length; i++) {
     newArray.push(callback(this[i], i, this))
   }
@@ -43,17 +43,17 @@ Array.prototype.myMap = function (callback) {
 arr.myMap(function (element) {
   console.log(element)
 })
+
 // filter
 
 Array.prototype.myFilter = function (callback) {
-  let newArray = []
+  const newArray = []
   for (let i = 0; i < this.length; i++) {
     if (callback) {
       newArray.push((this[i], i, this))
       return newArray
     }
   }
-
 }
 arr.myFilter(function (element) {
   console.log(element)
@@ -62,5 +62,17 @@ arr.myFilter(function (element) {
 // find
 
 Array.prototype.myFind = function (callback) {
-
+  const newArray = []
+  for (let i = 0; i < this.length; i++) {
+    if (callback) {
+      newArray.push((this[i], i, this))
+      return newArray
+    } else {
+      return undefined
+    }
+  }
 }
+
+arr.myFind(function (element) {
+  console.log(element)
+})
