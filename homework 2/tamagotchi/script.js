@@ -18,9 +18,9 @@ function Tamagotchi (
     console.log('Привет,я твой новый друг,меня зовут ' + this.name)
     console.log(this)
   }
-  
+
   this.walk = function () {
-    if (this.happiness <= 90) {
+    if (this.happiness <= 94) {
       this.happiness += Math.floor(Math.random() * 5)
       this.toilet -= Math.floor(Math.random() * 3)
       this.health -= Math.floor(Math.random() * 3)
@@ -33,26 +33,52 @@ function Tamagotchi (
       console.log(this)
     }
   }
-
-  this.run = function () {
-    console.log('я хочу свободы,прости...')
-    this.hungry = 0
-    this.health = 0
-    this.happiness = 0
-    this.toilet = 0
-    this.sleep = 0
-    this.purity = 0
-    console.log(this)
-  }
-
-  this.addStat = function (property) {
-    if (this[property] < 90) {
-      this[property] += Math.round(Math.random() * 5)
+  this.eat = () => {
+    if (this.hungry <= 94) {
+      this.happiness += Math.round(Math.random() * 5)
+      this.toilet -= Math.round(Math.random() * 7)
+      this.hungry += Math.round(Math.random() * 8)
     } else {
-      console.log('Давай немного позже')
+      console.log('я не голоден')
     }
   }
-
+  this.shower = () => {
+    if (this.purity <= 94) {
+      this.happiness += Math.floor(Math.random() * 4)
+      this.hungry -= Math.round(Math.random() * 7)
+      this.sleep -= Math.round(Math.random() * 7)
+      this.purity += Math.round(Math.random() * 8)
+    } else {
+      console.log('я не хочу в душ')
+    }
+  }
+  this.sleeping = () => {
+    if (this.sleep <= 90) {
+      this.sleep += Math.round(Math.random() * 10)
+      this.hungry -= Math.round(Math.random() * 5)
+      this.toilet -= Math.round(Math.random() * 7)
+    } else {
+      console.log('я не хочу спать')
+    }
+  }
+  this.goToilet = () => {
+    if (this.toilet <= 94) {
+      this.toilet += Math.round(Math.random() * 7)
+      this.hungry -= Math.round(Math.random() * 4)
+      this.purity -= Math.round(Math.random() * 6)
+    } else {
+      console.log('я не хочу в туалет')
+    }
+  }
+  this.heal = () => {
+    if (health <= 94) {
+      this.health += Math.round(Math.random() * 10)
+      this.hungry -= Math.round(Math.random() * 4)
+      this.happiness -= Math.floor(Math.random() * 5)
+    } else {
+      console.log('я итак здоров')
+    }
+  }
   const life = (time = 2) => {
     this.hungry = this.hungry - time
     this.health = this.health - time
@@ -70,8 +96,11 @@ function Tamagotchi (
 
 const pet = new Tamagotchi()
 
-pet.voice();
-//pet.walk();
-//pet.run();
+pet.voice()
+// pet.walk();
+// pet.shower()
+// pet.eat()
+// pet.goToilet()
+// pet.heal()
+// pet.sleeping()
 
-// pet.addStat('')
