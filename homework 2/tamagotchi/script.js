@@ -100,6 +100,24 @@ function Tamagotchi (
       console.log('ну всё...я умер..')
       clearInterval(interval)
     }
+    if (this.health >= 60 && this.health <= 64){
+      console.log('Я заболел')
+    }
+    if (this.hungry >= 60 && this.hungry <= 64) {
+      console.log('я хочу кушать')
+    }
+    if (this.toilet >= 60 && this.toilet <= 64) {
+      console.log('я хочу в туалет')
+    }
+    if (this.purity >= 60 && this.purity <= 64) {
+      console.log('я хочу в душ')
+    }
+    if (this.happiness >= 60 && this.happiness <= 64) {
+      console.log('Мне грустно,пойдём гулять!')
+    }
+    if (this.sleep >= 60 && this.sleep <= 64) {
+      console.log('я хочу спать')
+    }
   }
   const interval = setInterval(life, 5000)
 }
