@@ -47,11 +47,10 @@ arr.myMap(function (element) {
 // filter
 
 Array.prototype.myFilter = function (callback) {
-  const newArray = []
   for (let i = 0; i < this.length; i++) {
     if (callback) {
-      newArray.push((this[i], i, this))
-      return newArray
+      arr.push((this[i], i, this))
+      return arr
     }
   }
 }
