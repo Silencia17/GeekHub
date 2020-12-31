@@ -100,7 +100,7 @@ function Tamagotchi (
       console.log('ну всё...я умер..')
       clearInterval(interval)
     }
-    if (this.health >= 60 && this.health <= 64){
+    if (this.health >= 60 && this.health <= 64) {
       console.log('Я заболел')
     }
     if (this.hungry >= 60 && this.hungry <= 64) {
