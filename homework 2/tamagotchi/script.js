@@ -100,22 +100,22 @@ function Tamagotchi (
       console.log('ну всё...я умер..')
       clearInterval(interval)
     }
-    if (this.health >= 60 && this.health <= 64) {
+    if (this.health >= 15 && this.health <= 30) {
       console.log('Я заболел')
     }
-    if (this.hungry >= 60 && this.hungry <= 64) {
+    if (this.hungry >= 15 && this.hungry <= 30) {
       console.log('я хочу кушать')
     }
-    if (this.toilet >= 60 && this.toilet <= 64) {
+    if (this.toilet >= 15 && this.toilet <= 30) {
       console.log('я хочу в туалет')
     }
-    if (this.purity >= 60 && this.purity <= 64) {
+    if (this.purity >= 15 && this.purity <= 30) {
       console.log('я хочу в душ')
     }
-    if (this.happiness >= 60 && this.happiness <= 64) {
+    if (this.happiness >= 15 && this.happiness <= 30) {
       console.log('Мне грустно,пойдём гулять!')
     }
-    if (this.sleep >= 60 && this.sleep <= 64) {
+    if (this.sleep >= 15 && this.sleep <= 30) {
       console.log('я хочу спать')
     }
   }
