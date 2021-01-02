@@ -16,7 +16,9 @@ Array.prototype.mySort = function () {
   const len = this.length
   for (let i = 0; i < len; i++) {
     for (let j = 0; j < len - i - 1; j++) {
-      if (this[j] > this[j + 1]) {
+      var thisj= this[j].toString()
+      var thisi = this[j+1].toString()
+      if (thisj > thisi) {
         const temp = this[j]
         this[j] = this[j + 1]
         this[j + 1] = temp
@@ -25,6 +27,8 @@ Array.prototype.mySort = function () {
   }
   return this
 }
+
+arr.mySort()
 
 // arr.mySort(function (element){
 //   console.log(element)
