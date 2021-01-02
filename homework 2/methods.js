@@ -7,9 +7,6 @@ Array.prototype.myForEach = function (callback) {
     callback(this[i], i, this)
   }
 }
-arr.myForEach(function (element) {
-  console.log(element)
-})
 
 // Sort
 Array.prototype.mySort = function () {
@@ -43,10 +40,6 @@ Array.prototype.myMap = function (callback) {
   }
   return newArray
 }
-
-arr.myMap(function (element) {
-  console.log(element)
-})
 // filter
 
 Array.prototype.myFilter = function (callback) {
@@ -57,9 +50,6 @@ Array.prototype.myFilter = function (callback) {
     return arr
   }
 }
-arr.myFilter(function (element) {
-  console.log(element)
-})
 
 // find
 
@@ -74,7 +64,3 @@ Array.prototype.myFind = function (callback) {
     }
   }
 }
-
-arr.myFind(function (element) {
-  console.log(element)
-})
