@@ -1,5 +1,3 @@
-const arr = [1, 2, 3, 7, 8, 4, 1]
-
 // ForEach
 
 Array.prototype.myForEach = function (callback) {
@@ -25,8 +23,6 @@ Array.prototype.mySort = function () {
   return this
 }
 
-arr.mySort()
-
 // arr.mySort(function (element){
 //   console.log(element)
 // })
@@ -43,12 +39,13 @@ Array.prototype.myMap = function (callback) {
 // filter
 
 Array.prototype.myFilter = function (callback) {
+  let res = []
   for (let i = 0; i < this.length; i++) {
-    if (callback) {
-      arr.push((this[i], i, this))
+    if (callback (this[i], i, this)) {
+      res[res.length] = this[i]
     }
-    return arr
   }
+  return res
 }
 
 // find
