@@ -23,10 +23,6 @@ Array.prototype.mySort = function () {
   return this
 }
 
-// arr.mySort(function (element){
-//   console.log(element)
-// })
-
 // map
 
 Array.prototype.myMap = function (callback) {
