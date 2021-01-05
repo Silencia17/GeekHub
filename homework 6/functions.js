@@ -54,11 +54,10 @@ function fib (num) {
 
 function isSorted (arr) {
   let res = true
-  for(let i; i < this.length ; i++){
-    if(arr.sort()){
+  for (let i; i < this.length; i++) {
+    if (arr.sort()) {
       return res
-    }
-    else {
+    } else {
       res = false
     }
     return res
@@ -84,10 +83,10 @@ function reverse (str) {
 // indexOf([1, 2, 3], 1)               // 0
 // indexOf([1, 2, 3], 4)               // -1
 
-function indexOf(arr, a){
+function indexOf (arr, a) {
   let ind = -1
-  for(let i = 0; i < arr.length; i++){
-    if(arr[i] === a){
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === a) {
       ind = [i]
     }
   }
@@ -123,12 +122,11 @@ function isPolindrom (str) {
 // missing([1, 2, 3, 4])               // undefined
 
 function missing (arr) {
-  let res;
-  for (let i = 0; i < arr.length; i++){
-    if (arr[i] < arr[i -1]){
+  let res
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < arr[i - 1]) {
       res = [i]
-    }
-    else {
+    } else {
       res = undefined
     }
   }
@@ -142,4 +140,3 @@ function missing (arr) {
 // isBalanced('foo { bar { baz } boo }') // true
 // isBalanced('foo { bar { baz }')       // false
 // isBalanced('foo { bar } }')           // false
-
