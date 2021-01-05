@@ -52,6 +52,19 @@ function fib (num) {
 // isSorted([-Infinity, -5, 0, 3, 9])  // true
 // isSorted([3, 9, -3, 10])            // false
 
+function isSorted (arr) {
+  let res = true
+  for(let i; i < this.length ; i++){
+    if(arr.sort()){
+      return res
+    }
+    else {
+      res = false
+    }
+    return res
+  }
+}
+
 // // reverse - Reverses the given string (yes, using the built in reverse function is cheating).
 // reverse('')                         // ''
 // reverse('abcdef')                   // 'fedcba'
@@ -71,6 +84,16 @@ function reverse (str) {
 // indexOf([1, 2, 3], 1)               // 0
 // indexOf([1, 2, 3], 4)               // -1
 
+function indexOf(arr, a){
+  let ind = -1
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] === a){
+      ind = [i]
+    }
+  }
+  return ind
+}
+
 // // isPalindrome - Return true or false indicating whether the given string is a plaindrone (case and space insensitive).
 // isPalindrome('')                                // true
 // isPalindrome('abcdcba')                         // true
@@ -89,14 +112,28 @@ function isPolindrom (str) {
   return res
 }
 
-// missing - Takes an unsorted array of unique numbers (ie. no repeats) from 1 through some number n, and returns the missing number in the sequence (there are either no missing numbers, or exactly one missing number). Can you do it in O(N) time? Hint: There’s a clever formula you can use.
+// missing - Takes an unsorted array of unique numbers (ie. no repeats) from 1 through some number n, and returns the missing number in the sequence
+// (there are either no missing numbers, or exactly one missing number).
+// Can you do it in O(N) time? Hint: There’s a clever formula you can use.
+
 // missing([])                         // undefined
 // missing([1, 4, 3])                  // 2
 // missing([2, 3, 4])                  // 1
 // missing([5, 1, 4, 2])               // 3
 // missing([1, 2, 3, 4])               // undefined
 
-
+function missing (arr) {
+  let res;
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] < arr[i -1]){
+      res = [i]
+    }
+    else {
+      res = undefined
+    }
+  }
+  return res
+}
 
 // isBalanced - Takes a string and returns true or false indicating whether its curly braces are balanced.
 // isBalanced('}{')                      // false
@@ -105,3 +142,4 @@ function isPolindrom (str) {
 // isBalanced('foo { bar { baz } boo }') // true
 // isBalanced('foo { bar { baz }')       // false
 // isBalanced('foo { bar } }')           // false
+
