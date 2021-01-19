@@ -1,0 +1,19 @@
+.add-todo-button {
+  width: 120px;
+  margin-left: 20px;
+  border: 1px solid;
+  background: aliceblue;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.add-todo-button:hover {
+  border: 1px solid #1769aa;
+  cursor: pointer;
+}
+
+.input {
+  height: 20px;
+  text-align: center;
+}

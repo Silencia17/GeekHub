@@ -1,0 +1,21 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 650px
+};
+
+.cross {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 5px;
+}
+
+.cross:hover {
+  border: 1px solid #1769aa;
+  cursor: pointer;
+}
+p {
+  font-size: 20px;
+}
