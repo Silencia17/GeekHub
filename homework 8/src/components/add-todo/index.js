@@ -16,7 +16,6 @@ export function AddTodo ({ setTodoItem }) {
 
   useEffect(() => {
     const listener = event => {
-      console.log(event)
       if (event.code === 'Enter' || event.code === 'NumpadEnter') {
         addTodo()
       }
@@ -25,7 +24,7 @@ export function AddTodo ({ setTodoItem }) {
     return () => {
       document.removeEventListener('keydown', listener);
     };
-  }, [addTodo]);
+  });
 
   return (
       <>
